@@ -15,15 +15,14 @@ class MyApp extends StatelessWidget {
               key: PageStorageKey('page1'),
               child: ScrollablePositionedList.builder(
                 itemCount: 1000,
-                itemBuilder: (context, index) => Text('Item $index'),
+                itemBuilder: (context, index) => Text('List 1 Item $index'),
               ),
             ),
-            Text('house'),
             KeyedSubtree(
-              key: PageStorageKey('page3'),
+              key: PageStorageKey('page2'),
               child: ScrollablePositionedList.builder(
                 itemCount: 1000,
-                itemBuilder: (context, index) => Text('Item $index'),
+                itemBuilder: (context, index) => Text('List 2 Item $index'),
               ),
             ),
           ],
